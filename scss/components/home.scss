@@ -125,6 +125,12 @@
         font-weight: normal;
         font-family: $fontTitle;
         font-size: 1.2em;
+        
+        & .material-icons{
+            color: $color2;
+            font-size: .9em;
+            margin-right: .3em;
+        }
     }
     
     &__item{
@@ -135,7 +141,7 @@
     
     &__img{
         width: 30%;
-        height: 30%;
+        height: 30%;        
     }
     
     &__title{
@@ -192,6 +198,12 @@
         font-weight: normal;
         font-family: $fontTitle;
         font-size: 1.2em;
+        
+        & .material-icons{
+            color: $color2;
+            font-size: .9em;
+            margin-right: .3em;
+        }
     }
     
     &__item{
@@ -210,7 +222,7 @@
         padding: 0 .5em;
         
         &:hover{
-            background: lighten($color3, 30%);
+            background: lighten($color3, 35%);
         }
     }
     
@@ -225,7 +237,7 @@
 
 /* Programa Social */
 .programa-social{
-    height: 250px;
+    height: 240px;
     background: url(../img/programa-social.png)no-repeat fixed;
     background-position: 50% center;
     background-size: cover;
@@ -238,7 +250,7 @@
     
     & .container{
         position: relative;
-        height: 250px;
+        height: 240px;
         z-index: 20;
         
         display: flex;
@@ -255,7 +267,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba($color3, .5);
+        background: rgba($color3, .8);
         top: 0;
         z-index: 1;
     }
