@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    color: $fontColor;
+    font-family: $fontText;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0 1em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: #FFF;
+    font-family: $fontTitle;
+    font-size: 1.08em;
+    position: relative;
+    
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: $color2;
+        background-image:linear-gradient(90deg, lighten($color2, 5%), $color2);
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: skewX(-25deg);
+        z-index: -1;
+        transition: ease .3s;
+        box-shadow: 0 0 .3em rgba(0,0,0, .2);
+    }
+    
+    &:hover:after{
+        background: lighten($color2, 8%);
+        box-shadow: 0 .1em .3em rgba(0,0,0, .3);
+    }
+    
+    &:active{
+        transform: scale(.9);
+    }
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.dest{
+    font-family: $fontTitle;
+    font-weight: normal;
+    color: $fontColor;
+    text-align: center;
+    position: relative;
+    max-width: 8em;
+    margin: 1em auto;
+    
+    &:after{
+        content: "";
+        bottom: -.3em;
+        left: 2em;
+        width: 2em;
+        height: .2em;
+        position: absolute;
+        background: $color2;
+        transform: skewX(-25deg);
+    }
+}
+
+.text-center{
+    text-align: center;
+    font-size: .9em;
+}
+
+.up{
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    display: block;
+    width: 2em;
+    height: 2em;
+    background-image:linear-gradient(90deg, lighten($color2, 5%), $color2);
+    transform: skewX(-25deg);
+    z-index: 200;
+    box-shadow: 0 .8em 1em -.6em rgba(0,0,0, .4);
+}
+
+/*! Borrar */
+
+.contactenos{
+    
+    & img{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

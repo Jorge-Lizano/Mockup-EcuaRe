@@ -1,0 +1,38 @@
+/*!
+    *Developer:     Jorge Luis Lizano
+    *Email:         sunakes17@gmail.com
+    *Location:      Guayaquil, Ecuador.
+*/
+
+//Colors
+    $color1:    #35398b;
+    $color2:    #ef6c3d;
+    $color3:    #92a2a3;
+    $fontColor: #34495e;
+
+//Fonts
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px');
+    $fontTitle: 'Slabo 27px', serif;
+    $fontText: 'Open Sans', sans-serif;
+
+// Mixin media query
+    @mixin hasta($size){
+        @media screen and (max-width: $size){
+            @content;
+        }
+    }
+
+// Breakpoints
+
+    $small:     480px;
+    $medium:    767px;
+    $x-medium:  996px;
+    $large:     1200px;
+    $x-large:   1490px;
+
+//Imports
+    @import "components/normalize";
+    @import "components/general";
+    @import "components/header";
+    @import "components/responsiveslides";
+    @import "components/home";
