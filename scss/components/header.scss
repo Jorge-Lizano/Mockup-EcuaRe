@@ -37,6 +37,11 @@ body{
         font-size: 1em;
         margin-right: .2em;
     }
+    
+    & a{
+        color: $fontColor;
+        text-decoration: none;
+    }
 }
 
 .logo{

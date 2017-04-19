@@ -123,16 +123,16 @@
     text-decoration: none;
     font-family: $fontText;
     color: transparent;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
     margin: 0 2em;
     background-image:linear-gradient(90deg, lighten($color2, 5%), $color2);
     transform: skewX(-25deg);
     
     &:after{
         content: "";
-        width: 1em;
-        height: 1em;
+        width: .7em;
+        height: .7em;
         background: url(../img/arrow-dir.svg) center center no-repeat;
         background-size: contain;
         display: block;
@@ -140,6 +140,10 @@
         top: 50%;
         left: .1em;
         transform: translateY(-50%) skewX(25deg);
+    }
+    
+    &:hover{
+        background: lighten($color2, 8%);
     }
 }
 
