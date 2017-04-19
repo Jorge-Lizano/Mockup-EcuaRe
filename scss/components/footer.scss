@@ -95,3 +95,24 @@
         }
     }
 }
+
+@include hasta($small){
+    #Footer{
+        height: 25em;
+    }
+    .main-footer{
+        height: 25em;
+        
+        &__item{
+            width: 100%;
+            
+            &:first-child{
+                display: none;
+            }
+        }
+    }
+    
+    .second-footer{
+        text-align: center;
+    }
+}

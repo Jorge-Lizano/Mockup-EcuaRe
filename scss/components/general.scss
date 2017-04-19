@@ -11,6 +11,13 @@ body{
     overflow-x: hidden;
     color: $fontColor;
     font-family: $fontText;
+    font-size: 1em;
+}
+
+@include hasta($large){
+    body{
+        font-size: .95em;
+    }
 }
 
 .btn{
@@ -52,6 +59,13 @@ body{
 .container{
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;;
+}
+
+@include hasta($small){
+    .container{
+        width: 90%;
+    }
 }
 
 .dest{
@@ -72,6 +86,29 @@ body{
         position: absolute;
         background: $color2;
         transform: skewX(-25deg);
+    }
+}
+
+.read-more{
+    position: relative;
+    transition: ease .3s;
+    
+    &:after{
+      content: "»";
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      transition: ease .4s;
+    }
+    
+    &:hover{
+      color: $color2;
+        
+        &:after{
+            color: $color2;
+            opacity: 1;
+            right: -.8em;
+        }
     }
 }
 

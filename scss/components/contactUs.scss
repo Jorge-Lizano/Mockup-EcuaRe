@@ -1,7 +1,11 @@
+#Contactenos{
+     margin-top: 4em;   
+}
+
 .contact-us{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     
     &__form{
         width: 50%;
@@ -21,7 +25,7 @@
         outline: none;
         border: 1px lighten($color3, 10%) solid;
         border-radius: 2px;
-        padding: .5em;
+        padding: .4em;
         margin: 1.5% 1.5% 1.5% 0!important;
         display: inline-block;
         width: 46%;
@@ -35,6 +39,12 @@
     &__textarea{
         width: 94.5%!important;
         min-height: 6em;
+    }
+    
+    & .btn{
+        float: right;
+        margin-right: 2em;
+        margin-top: .5em;
     }
 }
 
@@ -53,7 +63,8 @@
     &__item{
 //        width: 33.33%;
         width: 44%;
-        font-size: .95em;
+        max-width: 15em;
+        font-size: 1em;
     }
     
     &__img{
@@ -94,5 +105,47 @@
         & .material-icons{
             font-size: .9em;
         }
+    }
+    
+    &__mail{
+        
+        &:hover{    
+            color: $color2;
+        }
+    }
+}
+
+@include hasta($medium){
+    .contact-us__form,
+    .call{
+        width: 100%;
+    }
+    
+    .call{
+        text-align: center;
+        
+        &__item{
+            width: 50%;
+            max-width: 100%;
+        }
+        
+        &__img{
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        &__name{
+            display: block;
+        }
+    }
+}
+
+@include hasta($small){
+    .call{
+        
+        &__item{
+            width: 100%;
+        }        
     }
 }
