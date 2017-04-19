@@ -159,27 +159,20 @@
     }
 }
 
-@include hasta($large){
-    #Slider{
-        font-size: .9em; 
-    }
-}
-
-@include hasta($x-medium){
-    #Slider{
-        &:before{
-            height: 10em;
-        }
-    }
-}
 
 @include hasta($medium){
-    #Slider{
-        &:before{
-            height: 6.5em;
-        }
-    }
     .content{
         font-size: .9em;
+    }
+    .rslides_tabs{
+        display: none;
+    }
+}
+
+@include hasta($small){
+    .content,
+    .rslides_nav,
+    .rslides_tabs{
+        display: none;
     }
 }

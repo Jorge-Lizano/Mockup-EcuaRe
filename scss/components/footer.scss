@@ -95,6 +95,18 @@
         }
     }
 }
+@include hasta($medium){
+    .main-footer{
+        
+        &__item{
+            width: 45%;
+            
+            &:first-child{
+                display: none;
+            }
+        }
+    }
+}
 
 @include hasta($small){
     #Footer{

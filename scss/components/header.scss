@@ -1,8 +1,3 @@
-body{
-    margin: 0;
-    color: $fontColor;
-}
-
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -55,7 +50,7 @@ body{
 
 .main-menu{
     display: flex;
-    margin: 0;
+    margin: 0 0 0 2em;
     padding-left: 0;
     position: relative;
     list-style: none;
@@ -120,5 +115,17 @@ body{
         &:hover{
             color: $color2;
         }
+    }
+}
+
+@include hasta($x-medium){
+    .main-menu{
+        display: none;
+    }
+}
+
+@include hasta($small){
+    .info{
+        display: none;
     }
 }
