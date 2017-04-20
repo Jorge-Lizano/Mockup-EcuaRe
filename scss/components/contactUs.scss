@@ -33,6 +33,7 @@
         
         &:focus{
             background: lighten($color3, 35%);
+             border: 1px lighten($color3, 10%) dashed;
         }
     }
     

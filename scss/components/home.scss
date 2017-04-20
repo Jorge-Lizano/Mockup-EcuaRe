@@ -12,7 +12,7 @@
     height: 11em;
     text-decoration: none;
     text-align: center;
-    margin: .6%;
+    margin: .6% .6% 1em .6%;
     position: relative;
     transition: ease .3s;
 //    overflow: hidden;
@@ -131,7 +131,6 @@
 
 /*  News */
 .news{
-    
     display: inline-block;
     vertical-align: top;
     width: 30%;
@@ -153,6 +152,12 @@
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 1em;
+        padding-bottom: .5em;
+        border-bottom: 1px lighten($color3, 25%) dashed;
+        
+        &:last-child{
+            border-bottom: none;
+        }
     }
     
     &__img{
@@ -200,7 +205,7 @@
     padding-left: 1em;
     display: inline-block;
     vertical-align: top;
-    width: 65%;
+    width: 69%;
     margin-top: 2em;
 }
 
@@ -226,7 +231,7 @@
     &__item{
         height: 2em;
         line-height: 2em;
-        width: 32%;
+        width: 33%;
         margin-bottom: .5em;
     }
     
@@ -237,9 +242,11 @@
         font-size: .9em;
         color: $color3;
         padding: 0 .5em;
+        transition: ease .3s;
         
         &:hover{
             background: lighten($color3, 35%);
+            padding-left: .8em;
         }
     }
     
