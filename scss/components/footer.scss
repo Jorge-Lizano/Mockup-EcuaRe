@@ -111,6 +111,10 @@
 @include hasta($small){
     #Footer{
         height: 25em;
+        
+        &:before{
+            display: none;
+        }
     }
     .main-footer{
         height: 25em;
